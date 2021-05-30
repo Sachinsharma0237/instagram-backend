@@ -40,7 +40,7 @@ passport.use(
     new GoogleStrategy({
     clientID:     CLIENT_ID,
     clientSecret: CLIENT_PW,
-    callbackURL: "http://localhost:4000/auth/callback",
+    callbackURL: "https://sachinsharma-instagram.herokuapp.com/auth/callback",
     passReqToCallback   : true
   },
   async function(request, accessToken, refreshToken, profile, done){

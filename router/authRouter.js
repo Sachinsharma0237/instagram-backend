@@ -7,7 +7,7 @@ authRouter.route("/google").get( passport.authenticate('google', {scope:['email'
 
 });
 authRouter.route("/callback").get( passport.authenticate('google'), (req, res)=>{
-    res.redirect("http://localhost:3000/");
+    res.redirect("https://sachinsharma-instagram.herokuapp.com/");
 });
 authRouter.route("/destroyCookie").get((req,res)=>{
     req.session = null;
